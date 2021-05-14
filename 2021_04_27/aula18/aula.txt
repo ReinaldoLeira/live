@@ -1,0 +1,50 @@
+Sempre responder(response) uma request, nem que seja com conteudo vazio.
+
+
+function addUser(req, res){
+}
+
+app.get('/criarUser', (req, res) => { })
+[nome criado para instancia do express].[verbo HTTP]('/rota iniciada em /', [nome da função ou função/arrow function])
+    res.send([o que sera enviado como resposta])
+
+
+module.esports.[nome da função] // exporta a função para outros arquivos    
+
+
+[endereçohttp]?[variavel]=[valor]  //get por query
+para enviar mais de um dado usar & para separar os dados
+
+const nome = req.query  // mesma coisa que:  const { nome } = req.query
+
+const { nome, idade } = req.query // já cria as  duas variaveis de uma vez
+
+
+//voltar nas aulas de javascript no playground pois foi liberada a aula de destruct
+
+
+
+----------------------
+-query  - Usada para filtros  '?'
+localhost:8080/obterUsuario/1
+
+-path - Acessa algo já criado por Id(identificador)
+/obterUsuario/:id/
+
+---------------------- 
+
+C reate
+R eady
+U pdate
+D elete 
+
+
+app.put('alunos/:id', [function]) // :id  indica o id que vai ser tratado
+
+
+codigo 200 é conexão feita com sucesso(padrão)
+codigo 201 é o criar objetos
+codigo 204 é status ok, mas retorna vazio
+
+req.params()  // para receber dados pelo path
+

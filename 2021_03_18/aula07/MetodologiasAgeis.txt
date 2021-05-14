@@ -1,0 +1,76 @@
+Professor Marcelo Diament
+https://github.com/Marcelo-Diament
+https://www.linkedin.com/in/marcelodiament/
+
+Apresentação:
+https://drive.google.com/file/d/11A4soN1lzMFmejL8YhO4xRAoKCFhgfm8/view?usp=sharing
+
+
+--
+
+Base: Manifesto agil
+12 principios fundamentais
+
+----
+
+agilidade não é fazer mais rapido, mas sim a capacidade de se adaptar as mudanças mais rapidamente.
+
+hotjar = verifica os cliques dos usuarios no site
+
+--
+existem alguns frameworks dentro do agile(metodologia agil)
+O mais utilizado é o SCRUM
+--
+
+Video sobre o case de sucesso(spotify)
+https://youtu.be/4GK1NDTWbkY
+
+-----------
+
+SCRUM
+-
+Estrutura
+Squads => Menor nivel, times pequenos, autonomos e focados em um propósito
+Tribos => agrupamento de Squads, tem um propósito comum, tambem é autonomo
+Chapters => São os grupos de expertise(grupo de dev, designer e etc)
+
+
+O PO é o cara que entende do negócio. Por exemplo, se for de uma squad de pagamento de cartão. Ele terá de saber muito bem do assunto "pagamento de cartão". Ele vai conseguir identificar as necessidades e criar atividades para tal, pois ele é o cara que manja de tudo daquela área
+
+chapter master é o lider do chapter focado na gestão dos profissionais
+
+Guildas => Transcendem a estrutura padrão. Agrupado por tema de interesse comum. Tem foco de compartilhar expertise
+
+PO => Product Owner, responsavel pelo backlog do produto, contato com o cliente 
+Scrum Master=> Responsavel pelo fluxo dos processos, conhecimento do metodo agil e criar condiçoes de trabalho para o squad
+CRO => Cientista de dados, gera e analisa dados, gera insights e melhoria de performance e SEO
+UX Designer => responsavel pela experiencia do usuario e analisa o comportamento do usuario
+UI Designer => Design de interface
+Arquitetos => verifica a viabilidade das implantações, planeja a estrutura do projeto, fluxo de dados e etc
+Dev => Implanta as soluções, implanta regras de negócio, transforma layout em código e é a ponta da entrega de valor.
+QA => Responsavel pela Garantia da Qualidade.
+-
+
+Termos
+Sprint =>Periodo curto em que sera feita certas entregas. Normalmente duram de 1 a 2 semanas
+backlog => Product backlog é a lista de desejos do produto e a Sprint Backlog é a lista de tarefas da sprint. 
+DOR|DOD =>DOr  é Definition Of Ready(define o que precisa ser feito para estar pronta para iniciar a tarefa) Definition Of Done(define que a task pode ser considerada entregue)
+Throughput => Capacidade de entrega baseada no histórico de desempenho da squad
+
+-
+
+Tasks
+Épico => Missão vasta com foco unico
+História => Uma etapa dentro do epico. Normalmente macro objetivos
+task => Tarefa pontual dentro da historia e pode ou não ser quebrado em subtask
+    subtask => sub-tarefa que pode ser feita à parte com a task
+    Feature => Adicionar uma funcionalidade nova
+    melhoria => Melhorar uma funcionalidade existente
+    Bugfix => Corrigir um defeito identificado
+    HOTfix => Correção feita imediatamente por problemas que precisam de correção imediata
+Gerenciadores de projetos => https://trello.com/b/7xMwsdy4/projeto-integrador-template
+
+--
+
+
+

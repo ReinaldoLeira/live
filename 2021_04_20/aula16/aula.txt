@@ -1,0 +1,56 @@
+position
+-relative -move em relação a posição inicial do objeto, posição relativa começa em 0,0
+-absolute -se move com base na posição do viewport. então o 0,0 é o canto supperior esquerdo
+-fixed - mesmo que o absoluto, mas sempre fica na viewport
+
+
+{
+    position: relative;
+    left: 350px;
+} esse codigo move 350px para direita
+
+para position melhor usar px ou %.
+
+{
+    position:absolute;
+    top:50px;
+}esse move 50px em relação ao inicio da viewport para baixo
+
+{
+    position:fixed;
+    left: 86%;
+    top: 86%
+}item vai ficar sempre fixo na posição 86% a direita e 86% para baixo
+
+
+{
+z-index: 1;
+} move no eixo z o objeto(negativo mais longe, positivo mais perto)
+
+------
+transição
+
+{
+transition: all 2s; //transition: [atributo modificado] [tempo em segundos(s) ou milisegundos(ms)]
+}todas as mudanças acontecem com transição de 2 segundos, para colocar mais de uma transition para o mesmo objetivo deve ser separado por virgula
+transition: height 2s, width 1s;
+
+
+div:click{[codigo]} // ao clicar na div coloca esse css
+
+----
+animação
+
+@keyframes anima-bola{
+    20%{ 
+        transform: translatex(300px);
+        }
+    80%{ transform: translatey(200px)  translatex(300px);}
+}
+
+.bola{
+    animation: anima-bola 10s infinite;//10s é a duração total da animação, infinite para sempre fazer
+}
+
+translate é mover
+rotate(90deg) girar o objeto

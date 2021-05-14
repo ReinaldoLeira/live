@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            font-size: 40px;
+        }
+        header a{
+            color: white;
+            text-decoration: none;
+        }
+        body{
+            font-family: Arial;
+        }
+        hr{
+            margin-bottom: 20px;
+        }
+        .Pai{
+            display: flex;
+        }
+        .w-15 {
+            width: 15%;
+        }
+
+        .w-85 {
+            width: 85%;
+        }
+        #botao{
+            border-radius: 30px;
+            background-color: #5E5AFF;
+            text-align: center;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .tarefa{
+            background-color: #F2F2F2;
+            padding: 15px;
+            list-style: none;
+            margin-bottom: 10px;
+            height: 20px;
+        }
+        .tarefaFeita{
+            border-left: 10px solid #61A500;
+        }
+        .tarefaCancelada{
+            border-left: 10px solid #CC424C;
+        }
+        .tarefaFazendo{
+            border-left: 10px solid #727272;
+        }
+    </style>
+</head>
+<body>
+    <header class="Pai">
+        <div class="w-85">Minha lista de tarefas</div>
+        <div class="w-15" id="botao"><a href="#">+ Nova Tarefa</a></div>
+    </header>
+    <hr />
+    
+        <li class="tarefa tarefaFeita">Dar comida para o cachorro</li>
+        <li class="tarefa tarefaCancelada">Limpar a casa</li>
+        <li class="tarefa tarefaFazendo">Dobrar roupa</li>
+        <li class="tarefa tarefaFazendo">Lavar a casa</li>       
+    
+</body>
+</html>

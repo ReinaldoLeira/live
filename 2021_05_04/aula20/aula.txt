@@ -1,0 +1,31 @@
+Uma clinica veterinária deseja criar um sistema para cadastros dos Pet's que chegam na empresa. Alguns requisitos tem que ser atendidos
+- Cadastre pets
+- Listagem dos pets
+- Categorizar pets como (SELVAGEM, DOMESTICO)
+- Ver detalhes dos pets
+- Edição
+- Deletar pet
+
+
+objetos:
+Pessoa(dono)
+    -ID
+    -CPF
+    -nome
+    -Endereço
+    -e-mail
+    -Telefone
+    -Animais   
+
+Animal
+    -ID
+    -nome
+    -idade
+    -Especie
+    -Raça
+    -Silvestre ou Domestico
+
+listar donos
+    -procurar
+    
+

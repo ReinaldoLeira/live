@@ -1,0 +1,13 @@
+  lib  bulma para estilizar
+  https://bulma.io/documentation/overview/start/
+
+  mock = pagina html já com todas as informações nela (pagina falsa)
+
+
+  button is-primary  // class para button de enviar com o bulma
+
+
+
+  required => atributo para obrigar a preencher um campo
+
+  

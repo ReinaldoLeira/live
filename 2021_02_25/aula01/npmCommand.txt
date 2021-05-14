@@ -1,0 +1,6 @@
+No terminal 
+
+npm init //inicializar o projeto
+
+npm install [package] --save //instalar novos pacotes
+

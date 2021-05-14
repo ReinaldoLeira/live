@@ -1,0 +1,20 @@
+http porta 80
+https porta 443
+
+
+200 ~ 299 sucesso na conexão
+404 não foi encontrado
+
+todos os status de conexão
+https://http.cat/
+https://httpstatusdogs.com/
+https://httpstatuses.com/
+
+li*5  // cria 5 linhas da lista
+<ul> lista não ordenada<\ul>
+<ol>lista ordenada(numerada)<\ol> 
+<ol type="i"> type define o tipo de ordenação
+<li>itens da lista<\li>
+
+
+<div>Para criar blocos no site<\div>

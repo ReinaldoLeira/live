@@ -1,0 +1,38 @@
+criptografia => 
+o jogo da imitação => filme sobre criptografia na guerra
+
+-simetrica: criptografica e libera usando a mesma senha
+-assimétrica: criptografa com uma senha e tira da criptografia com outra senha
+-hash(digerir): usado em transação bancaria e senhas, quando criptografada não existe forma de tirar a criptografia.
+
+node.bcrypt.js   =  lib para gerar hash
+02 é bcrypt
+
+
+definir se a rota é publica(todos acessam) ou se precisa estar autenticada
+
+
+Sessão formas de salva. // é unica por usuario e por navegador
+Cookie: LGPD usuario tem escolha de não salvar
+Local Storage / Session Storage: melhor usar este graças a LGPD
+
+401 = usuario não logado
+403 = logado mas sem permissão para acessar
+
+express-session => lib para autenticação com session
+
+app.use(session({
+    secret: 'senha_sorte'
+})) //criptografia para sessão do usuario
+
+req.session.estaAutenticado = true  // req.session pode ser acessado em qualquer lugar do sistema. estaAutenticado é a variavel criada informando true que esta autenticado.
+
+salvar userId e email do usuario no req.session para fazer comparação e saber o que o usuario pode ou não acessar
+
+req.body  = mandado pelo formulario
+req.params = mandado pelo url
+
+
+para deletar usar  : for(let i = array.lenght -1, i>=0, i--)
+
+e colocar o break após deletar

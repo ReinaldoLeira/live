@@ -1,0 +1,25 @@
+media queries >  para especificar css dependendo da exibição (Diferença entre mobile e desktops de tamanhos diferentes)
+
+
+@media (min-width: 481){
+    //aplica o css na tela com a largura 481 +
+} ordem do media influencia, colocar sempre depois
+
+pode ser usado "and", "min", "max" e etc
+
+pixel não tem redimensionamento
+
+font-size: 1em  => sempre multiplica o tamanho da fonte usada, se não for informado o padrão é 16px e pega os tamanhos de todos os pais//NÃO USAR
+
+font-size: 1rem => mesmo que o em, mas não sofre do pai.
+
+html{
+    font-size: 6.25%;
+} // faz com que cada 1rem seja igual a 1px
+
+
+
+box-sizing: border-box;  => conta o tamanho da borda do elemento
+box-sizing: content-box; => não conta a borda como parte do objeto
+
+*{box-sizing: border-box}  => usar assim

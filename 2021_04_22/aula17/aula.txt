@@ -1,0 +1,26 @@
+MVC  =>  View(front)  Controller(back)  Model(DB)
+
+view = EJS (renderizador de html)
+
+controller = express
+
+
+As rotas definem para qual controller vai as informações
+
+instalar express:
+npm init
+npm install express
+
+
+no js:
+const express = require('express') //informando que preciso usar o express
+const app = express() //coloca o express como app
+
+app.listen(8080) //manda o express ficar ouvindo essa porta
+
+por padrão um controller sempre tem res, req e send.res
+sempre usar o controller em um arquivo externo e em pasta propria
+
+http://localhost:8080/?nome=felipe  //? é a query    nome é uma variavel e felipe o conteudo
+
+email=email@email&senha=12345  // usar mais de uma variavel no link

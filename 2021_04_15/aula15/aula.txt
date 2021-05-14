@@ -1,0 +1,79 @@
+colearning geral
+2 e 4 das 19 as 20 horas.
+
+
+Formulario: ponto para coletar dados, input de dados.
+
+post: enviar informações para server
+get: receber informações do server
+
+
+<input/>  => input basico é uma entrada de texto
+
+atributos input:
+type="password" => para campo senha
+type="checkbox"  => marcação de multiplas escolhas
+type="radio" => marcação de apenas uma escolha
+type="button" => botão para uma ação na pagina
+
+name="cor" => para poder informar o nome do input
+value="Laranja" => é o valor que sera enviado
+label="Lembrar?" => nome daquele input
+
+cada grupo de radio vc precisa colocar o mesmo name
+
+
+<input id="lembraID" name="lembra" type="checkbox"/>
+<label for="lembraID">Lembra?</label> 
+
+
+<input type="radio" name="cor" value="laranja">laranja<input>
+
+
+placeholder="Digite Aqui" => texto que aparece no campo como dica 
+Lembrar de sempre usar o type certo para a informação de input
+
+
+maxlength ="150" => limitar o tamanho do input(nomes e email sempre bom limitar, 150 é um bom numero)
+required  => somente permite que o input seja enviado se estiver preenchido
+input type="submit"  => criar botão de enviar(post), apos o submit a pagina recarrega
+
+todos os itens precisam estar dentro da mesma tag <form>
+
+
+<button form="meu-login"> logar<button>
+
+
+
+<progress value="60" maxvalue="100">  => barra de progresso
+
+
+<form> aceita todo tipo de tag.
+
+
+menu dropdown
+<select>
+    <option>opçao a</option>
+    <option>opçao b</option>
+    <option>opçao c</option>
+</select>
+
+
+<input type="file">  => para fazer upload de arquivo
+
+<date/>  => mostra calendario, mas não é indicado pois boa parte dos navegadores não funcionam
+
+
+------------
+
+<link rel="stylesheet" type="text/css" href="tema.css"> => usar para itens que aparecem em diversas paginas
+<link rel="stylesheet" type="text/css" href="daPag.css"> => usar para itens somente de uma pagina especifica
+
+
+
+excluir => marcar como escluido
+deletar => apagar mesmo
+
+
+
+

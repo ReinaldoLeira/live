@@ -1,0 +1,5 @@
+Modal => componente na tela que aparece sobre a tela
+
+
+pinterest é muito bom para ideias de layout
+

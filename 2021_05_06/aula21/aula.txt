@@ -1,0 +1,38 @@
+ ctrl + d   => selecionar multiplos itens iguais, exemplos:
+ var a
+ var b
+
+Seleciona o "var" e aperta os botoes vai selecionar o outro
+
+mudar no public as pastas style, image e javascript para css, img e js respectivamente
+
+lembrar de apos iniciar o projeto atualizar os vars para const e mudar os nomes das pastas
+
+na vida real imagens devem ser usadas em servidores(exemplo S3 da amazon), mas para o PI podemos usar a pasta img
+
+<form method="post/get/delete" action='pets/novo[é a rota]'>
+
+res.redirect('/')  // redirecionar para home
+res.render('')
+
+npm install body-parser   //lib para transformar em objeto automaticamente as informaçoes recebidas 
+
+bcrypt lib para encriptar senha
+
+
+exercicio: Crie um site utilizando ejs (via express-generator) que exiba uma lista de ingredientes para uma receita
+
+
+===============
+- instalar node na máquinha
+- Digitar npm no cmd para verificar se instalou corretamente
+-npm install express-generator -g (no cmd)
+-criar uma pasta para seu projeto
+-entrar na pasta via cd
+-Após entrar na pasta, digite no cmd: express --view -ejs
+-npm install
+-npm start
+- No navegador: localhost:3000
+==============
+
+

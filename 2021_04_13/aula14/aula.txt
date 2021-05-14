@@ -1,0 +1,34 @@
+justify-content: flex-end;  => coloca os objetos na main (eixo x) no end
+space-between => coloca espaçamento igual nos objetos entre eles
+space-around => coloca espaçamento igual nos objetos tanto entre eles como ao redor
+
+align-items: flex-end;  => coloca os objetos na cross (eixo y) no end
+stresch;  => estende o objeto para o maximo de tamanho da altura
+
+align-self: ....   => muda o comportamento de posiçao de si mesmo
+
+
+div1:hover {...} => colocar propriedade no hover
+
+flex-wrap: wrap; => coloca os elementos e mais linhas caso seja necessario
+flex-wrap: wrap-reverse; => o mesmo que anterior, mas inverte a ordem
+
+flex-direction: column; => coloca os itens em colunas
+flex-direction: row; =>coloca os itens em linhas
+
+flex-flow: row wrap; => junção do wrap com a direction
+
+
+flex-grow: 1; => define a largura em relação aos outros objetos da div. Esse é um item que deve ser colocado em cada objeto.Somente define no aumento do tamanho
+flex-shrink: 1; => Mesmo que o grow, mas para a diminuição de tamanho
+
+
+flex: [grow] [shrink] [basis]; => junção do grow, shrink e basis. Valor 0 ignora o crescimento ou encolhimento. Basis define o tamanho maximo do item
+
+
+
+https://unicode.org/emoji/charts/full-emoji-list.html
+
+
+
+flex-grow: 1; => pode ser usado para ocupar toda a area livre da pagina

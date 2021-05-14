@@ -1,0 +1,39 @@
+header  = cabeçalho
+footer = rodapé
+section = sessão do site(evitar uso do div)
+
+priorizar usar tags semanticas 
+
+<strong><b>Negrito(qualquer um dos dois)
+<i>italico
+
+Descobrir a diferença
+<strong></strong> vs <em></em>
+
+SEO (procurar)
+
+menu superior = nav
+menu lateral = aside
+
+evitar ter o mesmo menu superior e lateral
+
+section são coisas macros. Area de noticias, area de fotos e etc
+
+text-decoration: none;  = retirar o ____ das palavras na tag<a>
+
+border-right: 1px solid white      = fazer separaçao dos botoes
+
+cursor   =  icone que mostrara no mouse quando estiver sobre o item
+
+
+Exercicio 02
+Feito - #61A500
+Cancelado - #CC424C
+Pra fazer - #727272
+Botão nova - #5E5AFF
+Background tarefas - #F2F2F2
+
+
+Para deixar redondo o botão
+
+border-radius: <tamanho>

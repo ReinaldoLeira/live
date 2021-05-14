@@ -1,0 +1,28 @@
+<div id="cabecalho"> //id para nomear uma div, id é unico
+
+<div class= "produtos"> // class é para diversas div's iguais
+
+
+<style> // é para colocar estilos(exemplo css), quando colocar no html sempre colocar no <head>
+
+margin = distancia a div por fora
+padding = distancia a div por dentro dela
+padding-left: 10px; //distancia dentro do lado esquerdo
+font-size: 35px; // tamanho da fonte
+color: rgb(138, 17, 41); //cor da fonte 
+border: 1px solid black //borda da div tamanho estilo e cor
+
+  <style>
+        div{
+            //Aqui customizando todos os div da pagina
+            background-color: #CCC; //muda a cor do background. Quando usamos 3 vezes o mesmo numero no rgb ele entende que os 6 numeros são iguais
+        }
+        #cabecalho{
+            //muda as configurações do id cabeçalho
+            background-color: #CCC;
+        }
+        .produtos{
+            //muda as configurações da class produtos
+            background-color: #CCC;
+        }
+    </style>

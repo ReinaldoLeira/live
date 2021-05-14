@@ -1,0 +1,45 @@
+Commit - descriçoes de mudança. Somente salva as alterações mas não coloca no repositorio  somente de coisas funcionando
+git commit -m "o que foi feito neste commit" 
+
+clone - copia o repositorio para a maquina local
+
+
+push - enviar as alterações para o github
+git push
+
+git add - marca que quer salvar a alteração de um arquivo (ao dar add deixa em STAGE)
+git add "nome do arquivo" //usar apenas para arquivos novos
+git add -p. "nome do arquivo"
+
+
+pull  - pegar apenas as modificações da nuvem
+git pull --rebase "branch"
+
+
+stash - guarda alterações do projeto atual na minha maquina
+stash apply - recupera as modificações do stash
+
+Fazer pull(baixar alterações), commit(salvar alterações) e push(atualizar a nuvem) com frequencia
+
+
+cria um hash para cada commit
+cada commit apresenta o nome da pessoa, email da pessoa e data de modicação. Sempre usar imperativo no commit ex: "Cria pagina de login"
+
+o HEAD pode ser renomeado
+
+origin/main(ou master) é o projeto no github isso é a branch
+
+
+git pull -- rebase origin main   => atualizar a branch origin na branch separada
+
+
+git merge [nomeDaBranch] => juntar duas branchs
+
+
+ver o log da branch que foi feito merge
+log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
+
+Git Workflow
+branch main fica o que esta em produção
+branch develop fica coisas em desenvolvimento

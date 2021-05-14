@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Calibri;
+        }
+
+        #cabecalho {
+            color: rgb(225, 170,4);
+            font-size: 30px;
+            padding: 30px;
+            background-color: black;
+        }
+
+        .divisor-cinza {
+            background-color: rgb(74, 74,74);
+            margin-bottom: 50px;
+        }
+
+        .pai {
+            display: flex;
+        }
+
+        .w-30 {
+            width: 30%;
+        }
+
+        .w-70 {
+            width: 70%;
+        }
+
+        .texto-grande {
+            font-size: 48px;
+            padding: 20px;
+        }
+
+        .texto-cinza {
+            color: rgb(74, 74,74);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .texto-destaque {
+            background-color: black;
+            color: rgb(225, 170,4);
+            text-align: center;
+            font-weight: 700;
+            font-size: 50px;
+        }
+
+        #footer {
+            height: 150px;
+            margin-top: 50px;
+        }
+
+        header {
+            border-bottom: 2px solid white;
+        }
+
+        nav {
+            display: flex;
+            background-color: black;
+            margin-bottom: 50px;
+        }
+
+        nav li {
+            list-style: none;
+            display: inline;
+            background-color: black;
+            padding: 10px;
+            height: 20px;
+            border-right: 1px solid white;
+            width: 130px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        ul {
+            padding-inline-start: 0px;
+            margin: 0;
+            display: flex;
+        }
+
+        ul li:hover {
+            background-color: #2f2f2f;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        Trinance
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+    <section class="pai">
+        <div class="w-30 texto-grande texto-cinza">
+            Welcome to
+        </div>
+        <div class="w-70 texto-destaque texto-grande">
+            TRINANCE
+        </div>
+    </section>
+    <footer id="footer" class="divisor-cinza"></footer>
+</body>
+</html>
+

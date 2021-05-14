@@ -1,0 +1,14 @@
+Quando fazemos require de um JSON o javascript já faz parse(transformar em dados o JSON) automatico quando recebe dados do JSON.
+
+\n  => pula linha no string
+
+type of   =>  diz o tipo do dado se é number, string  ou booleano
+
+find retorna apenas o objeto
+
+filter retona uma array com os itens iguais
+
+git checkout respostas   // para pegar o que fizemos
+
+
+

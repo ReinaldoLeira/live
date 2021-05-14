@@ -1,0 +1,53 @@
+uuid = universal unique id
+
+nunca salvar a senha crua no DB, usar sempre o hashing da senha.
+
+
+{ Router } = require('express') //
+
+
+usar  "app.js" ao inves de "index.js"
+
+
+ejs é um redenrizador de html.
+
+npm install ejs --save
+
+ejs usa arquivos .ejs
+
+
+app.set('view engine', 'ejs') // 
+
+<% tudo aqui dentro é codigo js %>
+
+<%= alunos%> // para mostrar algo na tela
+
+
+<% for (let aluno of alunos) { %>
+    <%= aluno.nome %>
+<%}%>
+
+
+-----
+instala global na pasta
+npm install -g express-generator
+
+-------------------------------
+para iniciar um novo projeto
+express --view=ejs
+
+npm install
+
+npm start
+
+-----------
+
+<% 'Scriptlet' tag, for control-flow, no output
+<%_ ‘Whitespace Slurping’ Scriptlet tag, strips all whitespace before it
+<%= Outputs the value into the template (HTML escaped)
+<%- Outputs the unescaped value into the template
+<%# Comment tag, no execution, no output
+<%% Outputs a literal '<%'
+%> Plain ending tag
+-%> Trim-mode ('newline slurp') tag, trims following newline
+_%> ‘Whitespace Slurping’ ending tag, removes all whitespace after it
