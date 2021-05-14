@@ -13,15 +13,15 @@
 
 <div class="container">
     <% if (receita) { %>
-        <h1><%= receita.nome %></h1>
+        <h1><%= receita[0].nome %></h1>
         <hr />
-        <% const ingredientes = receita.ingredientes.split('\n') %>
+        <% const ingredientes = receita[0].ingredientes.split('\n') %>
         <ul>
             <% for (const ingrediente of ingredientes) { %>
                 <li><%= ingrediente %></li>
             <% } %>
         </ul>
     <% } %>
-    <p>O tempo de preparo é <%= receita.preparo%> minutos</p>
-    <p>Serve <%= receita.porcoes%> porções</p>
+    <p>O tempo de preparo é <%= receita[0].preparo%> minutos</p>
+    <p>Serve <%= receita[0].porcoes%> porções</p>
 </div>

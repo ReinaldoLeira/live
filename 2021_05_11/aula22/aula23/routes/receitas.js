@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const array = [];
+let idCont = 0;
 
 router.get('/', (req, res) => {
     res.render('lista', { receitas: array, pagina: 'lista' })
@@ -13,14 +14,14 @@ router.get('/nova', (req, res) => {
 
 router.get('/:id', (req, res, next) => {
     const id = parseInt(req.params.id);
-    const receitaSelecionada = array[id - 1];
+    const receitaSelecionada = array.filter((array) => {return array.id === id});
     
     res.render('detalhe', { receita: receitaSelecionada, pagina: "detalhe" });
 });
 
 router.post('/', (req, res) => {
     const receitaNova = {
-        id: array.length + 1,
+        id: idCont++,
         ...req.body
     }
 
