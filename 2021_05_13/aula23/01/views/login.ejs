@@ -40,15 +40,14 @@
   <body class="bodyIndex">
     <header class="headerIndex"></header>
     <main class="panel mainIndex">
-      <p class="title">Cadastro</p>
-        <form action="/cadastrar" method="POST" class="formIndex">
-          <label class="label" for="nome">Nome:</label>
-          <input class="input inputIndex" type="text" id="nome"name="nome" autocomplete="off" placeholder="Nome" required/>
+      <p class="title">Login</p>
+        <form action="/logar" method="POST" class="formIndex">  
+          <p><%=mensagem%></p>       
           <label class="label" for="email">E-mail:</label>
           <input class="input inputIndex" type="email" id="email"name="email" autocomplete="off" placeholder="Email" required/>
           <label class="label" for="senha">Senha:</label>
           <input class="input inputIndex" type="password" id="senha"name="senha" autocomplete="off" placeholder="Senha" required/>
-          <input class="button is-primary buttonIndex" type="submit" value="Cadastrar"/>
+          <input class="button is-primary buttonIndex" type="submit" value="Login"/>
         </form>
     </main>
   </body>

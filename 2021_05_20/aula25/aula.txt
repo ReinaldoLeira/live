@@ -1,0 +1,35 @@
+I/O - input/ output  = 1ms para executar
+
+function buscaPessoa(id){
+    return new Promise((resolve, reject) => {
+        //resolve responde quando a função conseguiu funcionar
+        //reject  responde quando a função dá erro
+    })
+}
+
+
+//await faz com que seja executado na sequencia.
+async function retornarPessoa(id){
+    const pessoa = await buscaPessoa(id)
+    const pessoa = await buscaCpf(id) 
+}
+
+
+//toda funçao async retorna uma Promise
+
+//erros comuns
+rodar "await" sem colocar async => dá erro
+Se for chamar uma function async preciso colocar o await, ou seja tem que estar dentro de outra function async
+
+retorno reject para todo o codigo na hora
+
+//try catch pode ser usado em qualquer tipo de erro, mas ele é pesado
+try{
+    //codigo que pode quebrar(recebe reject)
+}catch (error){
+    //erro
+    console.log(error)//error = mensagem enviada pelo reject
+    console.error(error) //mesmo que o console.log mas usado para erros
+}
+
+throw Error('Usuario nao encontrado') // fazer dar erro/quebrar o codigo

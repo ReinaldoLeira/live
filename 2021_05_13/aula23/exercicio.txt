@@ -1,0 +1,13 @@
+ Galerinha, como o Felipe tinha combinado com vocês aqui está a lição de casa:
+☐ Criar um projeto com express-generator
+☐ Desenvolver o html dos wireframes (sim, pode usar o bulma)
+☐ Criar as rotas para as telas 1, 2 e 3
+☐ As rotas devem renderizar as telas criadas no item 2
+☐ Criar as rotas para os formulários
+☐ Criar um arquivo JSON para armazenar os usuários cadastrados
+☐ A rota do formulário de cadastro deve salvar os novos usuários no arquivo JSON
+☐ As senhas do usuários devem ser salvas com criptografia (olá, bcrypt)
+☐ Quando usuário fizer login é necessário salvar a sessão dele (olá, express-session)
+☐ A tela 3 deverá ser acessível somente caso o usuário esteja logado
+☐ Na tela 3 a mensagem deverá exibir o nome do usuário logado
+have fun! :typingcat:
