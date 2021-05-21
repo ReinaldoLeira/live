@@ -33,3 +33,8 @@ try{
 }
 
 throw Error('Usuario nao encontrado') // fazer dar erro/quebrar o codigo
+
+
+body-parser => transforma o body da req em objeto
+
+

@@ -11,6 +11,6 @@ router.get('/login', indexController.login);
 
 router.post('/logar', indexController.logar);
 
-router.get('/logado', indexController.logado);
+router.get('/logado', indexController.logado); 
 
 module.exports = router;

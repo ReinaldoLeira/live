@@ -1,6 +1,5 @@
 const bcrypt = require('bcrypt')
 const fs = require('fs');
-const app = require('../app')
 
 let arrayUsers = require('../model/index.json')
 
