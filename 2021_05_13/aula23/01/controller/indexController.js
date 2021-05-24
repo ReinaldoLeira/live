@@ -39,7 +39,8 @@ module.exports.logar = (function(req, res, next) {
         {
             req.session.estaAutenticado = true,
             req.session.userId = userSelecionado[0].id
-            res.render('logado',{user:userSelecionado[0]});
+            console.log(req.session)
+            res.redirect('/logado');
         }
         else
         {
@@ -48,7 +49,7 @@ module.exports.logar = (function(req, res, next) {
 });
 
 module.exports.logado = (function(req, res, next) {
-    res.render('logado');
+    res.render('logado', {user: req.session.userId});
 });
 
 module.exports.cadastrar = (function(req, res, next) {
