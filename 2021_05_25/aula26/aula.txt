@@ -1,0 +1,36 @@
+mySQL => normalmente usa a porta 3306 se não for alterado
+
+tabela  = modelo = entidade
+
+todo modelo é uma tabela, mas nem toda tabela é um modelo
+
+pk = primary key => identificador unido do model, normalmente usamos o 'id'
+
+fk = foreign key => chave de outra tabela
+
+=====
+=SQL=
+=====
+sgbd é o banco
+
+
+Tipos de dados do JS            SQL
+--
+String                          VARCHAR(n)  => definir tamanho, normalmente usar 150 para nome
+Boolean                         TinyInt(n) => não possui boolean, usa-se binary(0/1) para representar o boolean. Usado para numeros pequenos
+Integer                         INT =>  para id usar BigInt pois tem um numero maior de casas.
+Float                           Float => para moeda usar Decimal(8,3)
+Char                            varchar(1)
+Date                            DATE(yyyy-mm-dd)/DATETIME(yyyy-mm-dd- hh:mm:ss)
+
+
+CREATE TABLE Pessoa(  => criar tabela Pessoa
+    ID BigInt AUTO_INCREMENT NOT NULL,
+    Nome VarChar(150) NOT NULL,
+    cpf VarChar(11) NOT NULL,
+    PRIMARY KEY (ID)
+);
+
+FOREIGN KEY (PessoaId) REFERENCES Pessoa(ID)  //criar fk
+
+INSERT INTO Pessoa(Nome, cpf) VALUES('felipe', '00011122233'); //adicionando valores
