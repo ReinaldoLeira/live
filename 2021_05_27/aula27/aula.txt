@@ -1,0 +1,11 @@
+CREATE => cria tabelas
+INSERT => insere dados
+DELETE => deletar
+UPDATE => atualizar dados
+
+em relacionamentos  n?m (muitos para muitos) usasse uma tabela auxiliar para juntar as duas
+
+instalar o mysql sever
+
+https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/
+
