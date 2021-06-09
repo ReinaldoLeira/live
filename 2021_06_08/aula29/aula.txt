@@ -1,0 +1,80 @@
+ORM <<<< Sequelize é um ORM => faz tradução da linguagem do DB para o javascript
+
+>>>>>>>>>>>>>>>>>>>usar versão 5 do Sequelize<<<<<<<<<<<<<<
+
+driver => nome dado as libs para comunicar com banco de dados
+
+mysql2 => lib que vamos utilizar
+
+
+////sem ORM seria visto assim os dados do DB
+[
+    [],
+    []
+]
+
+O ORM já faz a conversão para variaveis e objetos sem preicarmos fazer na mão
+
+migration é para criar banco e fazer modificações no banco
+
+instalar o sequelize :
+npm install sequelize@5.21
+
+
+Precisamos assumir:
+- Banco esta criado(migration)
+
+
+Para iniciar um projeto com sequelize
+1 - criar pasta projeto
+2 - npm init
+3 - npm i sequelize@5.21 sequelize-cli
+4 - npx sequelize init
+5 - npm i mysql2
+
+
+banco sempre trabalha com promises
+
+//findAll  => SELECT *
+exemplo: async function teste(){
+    const alunos = await models.Aluno.findAll()
+    console.log(alunos)
+}
+
+
+//findOne => Select 
+
+
+
+-------------
+  sequelize,
+    modelName: 'Aluno',
+    timestamps: false // no models/aluno colocamos timestampsfalse para não verificar o createdAt e o editedAt que deve ter em todas as tabelas
+  });
+
+
+//comando dado no cmd para criar a model aluno com base no DB escolinha
+  npx sequelize model:generate --name Aluno -- attributes id:number,nome:string,idade:number
+
+
+//  >   ==== gt (greater)
+// >=  ===== gte (greater and equals)
+// <  ======= lt (lowert)
+// <=  ===== lte 
+// =    ===== eq (equalz)
+
+---------usando operadores
+const {Op} = require('sequelize')
+
+async function teste(){
+    const alunos = await models.Aluno.findAll({
+        where: {
+            id: {
+                [Op.gte]: 6
+            }
+        }
+    })
+    console.log(alunos)
+}
+
+sequelize  já trata SQL injection
