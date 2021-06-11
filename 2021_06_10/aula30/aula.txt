@@ -1,0 +1,9 @@
+Para iniciar um projeto com sequelize
+1 - criar pasta projeto
+2 - npm init
+3 - npm i sequelize@5.21 sequelize-cli mysql2
+4 - npx sequelize init
+
+npx sequelize model:generate --name Usuario --attributes idUsuarios:number,nome:string,email:string,senha:string
+
+npx sequelize model:generate --name Meta --attributes idMetas:number,nome:string,descricao:string,concluido:number,Usuarios_idUsuarios:number
