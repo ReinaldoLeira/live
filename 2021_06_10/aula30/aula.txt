@@ -7,3 +7,4 @@ Para iniciar um projeto com sequelize
 npx sequelize model:generate --name Usuario --attributes idUsuarios:number,nome:string,email:string,senha:string
 
 npx sequelize model:generate --name Meta --attributes idMetas:number,nome:string,descricao:string,concluido:number,Usuarios_idUsuarios:number
+

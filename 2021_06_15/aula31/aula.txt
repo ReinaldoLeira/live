@@ -1,0 +1,43 @@
+idPessoas: {
+    type: DataType.intenger,
+    references:{
+        model:'Pessoas'  //referenciando a tabela e não ao model
+    }
+}// isso é para criar a conexão do FK
+
+
+autoIncrement: true // colocar no id da pk
+
+==========
+
+async function buscaPessoaPorId(id){
+    const pessoa = await models.Pessoa.findOne({
+        where: { id },
+        include:[
+            {
+                model: models.Dependente
+            }
+        ]
+        })
+
+    console.log(pessoa.toJSON())
+
+}
+
+=====
+
+//Na model pessoa (que não tem fk) e caso fosse 1/1 usaria hasOne ao inves de hasMany
+static associate(models){
+    this.hasMany(models.Dependente, {
+        foreignKey: 'idPessoas',
+        targetKey: 'id'
+    })
+}
+
+//na model com a fk
+static associate(models){
+    this.belongsTo(models.Pessoa, {
+        foreignKey: 'idPessoas',
+        targetKey: 'id'
+    })
+}
