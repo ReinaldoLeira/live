@@ -1,0 +1,19 @@
+API(Application Programming Interface) => Serviço utilizado para fazer algo, normalmente são um conjunto de rotas para executar o serviço.
+
+API's podem ser pagos ou não
+
+REST => padrão para criação de Interface para API nas rotas
+
+ROTA - ENDPOINT - API
+
+content-type: Cada API recebe um tipo diferente de dado
+JSon => é o mais amigavel
+SOAP => É um xml
+
+Exemplo de API: https://rickandmortyapi.com/documentation/#rest
+
+
+API Key => uma forma de limitar o acesso a uma API apenas para quem tem direito
+
+
+
