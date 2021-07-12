@@ -1,0 +1,15 @@
+onblur => Quando tira o item do foco
+onfocus => quando o item é selecionado
+onchange => quando tira o foco e o conteudo foi alterado
+
+//fazer o botão ficar ativo apenas se o checkbox(element) estiver marcada
+element.onchange = () {
+    let button = document.querySelector('button')
+    button.disabled = !element.checked
+}
+
+onsubmit => usado no form ao submetar algo
+
+e.preventDefault() => faz com que a ação padrão do elemento não seja executada, como por exemplo submeter ao clicar em um submit no form
+
+

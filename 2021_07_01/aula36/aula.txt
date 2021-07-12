@@ -1,0 +1,69 @@
+window => nome dado a janela inteira
+Todos os elementos que fazem parte do windows faz parte do DOM
+
+window pode ser chamado document
+
+Podemos acessar os elementos usando
+-tag
+-id
+-class
+
+
+document.query  => usado para buscar um elemento da pagina
+
+document.querySelectorAll('h1') // usado para selecionar a tag
+
+innerText => texto dento da tag HTML
+
+document.querySelectorAll('h1')[0].innerText  //seleciona o texto no tag
+
+document.querySelectorAll('h1')[0].innerText = 'Testando'  // muda o texto da tag
+
+document.querySelectorAll('.titulo') //selecionar por class(todos os elementos) Sem o all pegaria apenas o primeiro
+
+document.querySelectorAll('#titulo') //seleciona por id
+
+document.getElementById('titulo') // mesma coisa que o querySelectorAll mas apenas para id
+
+querySelectorAll retorna sempre um array
+querySelector retorna um unico elemento
+
+querySelector pode ser trabalhado igual o css usando class/id e tag especifica
+
+innerHTML => acesso a tag para edição
+
+document.querySelector('div').innerText += ' nome' // concatena com o texto já existente no elemento
+
+querySelector('item').style.color = 'blue' //colocar o css de cor da letra em blue
+
+querySelector('item').style.background = '#004400' // mudar a cor do background
+
+=========
+
+let elemento = document.querySelector('div')
+
+elemento.classList.add('azul') //adicionar class no elemento
+elemento.classList.remove('azul') //remover class do elemento
+.replace('item1', 'item2') //troca a class item1 pela class item2
+
+
+toggle => alterna em item marcado ou não
+elemento.classList.toggle('marcado') //Desativa e ativa a class marcado a cada vez que o toggle é usado
+
+setInterval(() => elemento.classList.toggle('marcado'), 200) //roda o comando a cada 200 ms 
+
+document.querySelector('input').value => pegar o que esta dentro do input
+
+====
+<script>
+//aqui fazer todo o javascript da pagina igual o style
+</script>
+
+//para usar um js fora da pagina
+<script src="/js/index.js"></script>
+
+//colocar o script no fim do body se for apenas da pagina, o que for geral colocar no header
+
+
+document.querySelector('button').onclick = () => { alert('clicou')}  // onclick recebe uma função ou arrow function para informar o que fará.
+

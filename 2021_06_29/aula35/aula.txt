@@ -1,0 +1,26 @@
+axios => lib para fazer requisições http(get, push, patch, delete, etc), é baseada em promise
+
+npm i axios
+
+
+axios.get('url')
+
+status maior de 200 e menor de 300 a requisição deu certa
+data => é o response do api
+
+para get seria params ao inves de data. data normalmente é para post
+
+
+if(typeof temperatura === 'number'){blablabla}  //fazer verificação do tipo de dado
+
+
+colocar o arquivo de API na pasta 'externals'
+
+
+outras opções pode ser a lib 'Node Fetch' para back-end
+
+RAPIDAPI.COM => site para apis
+https://rapidapi.com/search/community
+
+sdk => biblioteca feita para usar uma API para não precisar codar a API
+

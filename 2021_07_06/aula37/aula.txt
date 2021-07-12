@@ -1,0 +1,32 @@
+MouseOver => Colocar o mouse em cima
+
+MouseOut => tirar o mouse de cima
+
+Click => apertar e soltar
+
+//keyboard
+onkeydown => ao apertar
+onkeypress => ao apertar e soltar
+onkeyup => ao soltar
+
+//mouse
+onmouseover => colocar o mouse em cima 
+onmouseout  => tirar o mouse de cima
+onmouseleave  => mesmo que o mouseout, mas tbm afeta os filhos
+onmousemove => quando move sobre o item(cada pixel)
+onclick => click do mouse
+
+====
+.onclick = (e){
+    //e é o evento que chamou a função, ao dar console.log no e mostrara todas as informações do evento
+}
+
+<style>
+.item{
+    cursor: pointer    //ponteiro de seleção
+}
+</style>
+
+
+para pegar eventos de teclado usamos normalmente duas formas
+window.onkeydown = (e) => {console.log(e.key)} //window representa toda a janela do navegador
