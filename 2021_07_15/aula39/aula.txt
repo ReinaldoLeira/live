@@ -1,0 +1,3 @@
+lib fetch => para fazer requisições put, delete e etc. Ele é a base de promise
+
+fetch('end point da api')

@@ -1,0 +1,21 @@
+salvar dados temporarios no navegador => usar o storage do navegador
+localStorage => tamanho maximo 10Mb
+cookie => tamanho maximo 2kb
+
+
+localStorage.setItem recebe uma string por isso precisa de jason.stringfy
+
+localStorage.clear  => limpar o local storage
+
+sessionStorage => mesmo que o storage, mas somente salva naquela aba, ao fechar ou acessar outra pagina o dado é apagado
+
+logger winston => para gerar logs do sistema
+
+
+cors => de um site/sistema para outro fora
+
+existe uma lib para cors chamada 'cors' no express
+
+
+location => informações da url
+
