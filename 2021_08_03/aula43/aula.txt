@@ -1,0 +1,25 @@
+react => framework para frontend
+
+roda em um servidor separado do back
+
+express => framework para backend(node)
+
+criar componente => se vc for duplicar codigo vc cria componente
+
+npm i prop-types  => gerenciar props, serve para definir os tipos de dados do proptypes
+
+fazer um js por componente sempre em separado
+
+export function Componente(){
+    ....
+}
+
+import {Componente} from './Componente'
+
+criar pasta de componente e cada componente deve ter seu proprio css
+
+>>>>>>>>>>>pesquisar scss<<<<<<<<<
+
+lembrar de usar className no lugar de class
+
+

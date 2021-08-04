@@ -1,0 +1,18 @@
+import logo from './logo.svg';
+import './App.css';
+import { useState } from 'react';
+function App() {
+  const [valorInicial, setValorInicial] = useState('Felipe')
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>{valorInicial}</h1>
+        <input
+          value={valorInicial}
+          onChange={e => setValorInicial(e.target.value)}
+        />
+      </header>
+    </div>
+  );
+}
+export default App;

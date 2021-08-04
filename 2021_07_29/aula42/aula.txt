@@ -1,0 +1,12 @@
+React
+
+npm init react-app nomeProjeto  => instalar o react
+
+className => substitui o class pois é palavra reservada do JScript
+
+htmlFor => substitui o for do input
+
+variaveis só precisam ser colocadas no {} para serem exibidas
+
+state = o estado, utilizado em variaveis que vão ser alteradas 
+

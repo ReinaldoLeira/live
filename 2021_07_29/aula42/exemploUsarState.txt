@@ -1,0 +1,30 @@
+import logo from './logo.svg';
+import './App.css';
+import { useState } from 'react';
+function App() {
+  const [personagens, setPersonagens] = useState([])
+  obterListaPersonagens().then((resultados) => {
+    const nomes = []
+    for (const resultado of resultados) {
+      nomes.push(resultado.name)
+    }
+    setPersonagens(nomes)
+  })
+  return (
+    <div className="App">
+      <header className="App-header">
+        <ul>
+          {
+            personagens.map((personagem, index) => <li key={index}>{personagem}</li>)
+          }
+        </ul>
+      </header>
+    </div>
+  );
+}
+async function obterListaPersonagens() {
+  const response = await fetch('https://rickandmortyapi.com/api/character')
+  const jsonResponse = await response.json()
+  return jsonResponse.results
+}
+export default App;
