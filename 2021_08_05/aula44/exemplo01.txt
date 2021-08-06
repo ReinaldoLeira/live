@@ -1,0 +1,31 @@
+import logo from './logo.svg'
+import './App.css'
+import Card from './components/Card'
+import {useState} from 'react'
+
+function App() {
+  const [animais, setAnimais] = useState(['Gato', 'Cachorro']) 
+
+  function cadastarAnimal() {
+    const input = document.querySelector('input')
+    setAnimais([...animais, input.value])
+    input.value = ''
+  }
+  
+  return (
+    <div className="App">
+      <input placeholder="Nome do animal"></input>
+      <button onClick={cadastarAnimal}>Adicionar</button>
+      {
+        animais.map((animal, index) => {
+          return (
+            <Card nome={animal} key={index} />
+          )
+        })
+      }
+    </div>
+  );
+}
+
+export default App;
+

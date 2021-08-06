@@ -1,0 +1,49 @@
+import logo from './logo.svg'
+import './App.css'
+import Card from './components/Card'
+import {useState, useEffect} from 'react'
+
+function App() {
+  const [personagens, setPersonagem] = useState([])
+  let [paginaAtual, setProximaPaginaAtual] = useState(1)
+
+  useEffect(() => {
+    obterPersonagens(paginaAtual).then((lista) => {
+      setPersonagem([...personagens, ...lista])
+    })
+  }, [paginaAtual])
+
+  function avancarPagina() {
+    paginaAtual++
+    setProximaPaginaAtual(paginaAtual)
+  }
+
+  function voltarPagina() {
+    paginaAtual--
+    setProximaPaginaAtual(paginaAtual)
+  }
+
+  return (
+    <div className="App">
+      <h2>Bem-vindo ao Portal Rick Morty</h2>
+      <button onClick={voltarPagina}>Voltar</button>
+      <button onClick={avancarPagina}>Proximo</button>
+      {
+        personagens.map((personagem, index) => {
+          return (
+            <Card nome={personagem.name} imagem={personagem.image} key={index} />
+          )
+        })
+      }
+    </div>
+  );
+}
+
+async function obterPersonagens(paginaAtual) {
+  const resultado = await fetch(`https://rickandmortyapi.com/api/character?page=${paginaAtual}`)
+  const json = await resultado.json()
+
+  return json.results
+}
+
+export default App;

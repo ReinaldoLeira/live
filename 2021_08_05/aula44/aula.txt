@@ -1,0 +1,4 @@
+ciclo de vida
+
+funções de set precisam sempre criar umnovo array
+
