@@ -1,0 +1,23 @@
+react não tem rotas por padrao. É necessario fazer a instalação do mesmo
+
+npm i react-router-dom
+
+
+export default ...  =>  import ...
+export ... => import {...}
+
+USAR >>>>>>>>>> ROUTE<<<<<<<<< NÃO ROUTER
+
+
+estudar switch no react
+
+estudar implementação de rotas privadas
+
+https://reactrouter.com/web/api/Router
+
+
+https://pt-br.reactjs.org/docs/getting-started.html
+
+
+estudar testes de codigo
+
